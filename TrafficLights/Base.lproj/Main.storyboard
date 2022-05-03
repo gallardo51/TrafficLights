@@ -17,11 +17,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hyo-WP-jZE">
-                                <rect key="frame" x="147" y="60" width="120" height="400"/>
+                                <rect key="frame" x="147" y="60" width="120" height="380"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1F1-5d-Ydl">
                                         <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
                                         <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="120" id="rkc-Mg-uId"/>
+                                        </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TdC-Aw-xbL">
                                         <rect key="frame" x="0.0" y="130" width="120" height="120"/>
@@ -31,16 +34,16 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ILV-Br-bvt">
-                                        <rect key="frame" x="0.0" y="260" width="120" height="140"/>
+                                        <rect key="frame" x="0.0" y="260" width="120" height="120"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="140" id="4El-Qp-KZB"/>
+                                            <constraint firstAttribute="height" constant="120" id="4El-Qp-KZB"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="Mrc-b1-zZ4"/>
-                                    <constraint firstAttribute="height" constant="400" id="Mrg-4a-Lhf"/>
+                                    <constraint firstAttribute="height" constant="380" id="Mrg-4a-Lhf"/>
                                 </constraints>
                             </stackView>
                         </subviews>
