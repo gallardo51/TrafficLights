@@ -9,11 +9,24 @@ import UIKit
 
 class ViewController: UIViewController {
 
+   
+    @IBOutlet weak var trafficLightsLabel: UIStackView!
+    
+    @IBOutlet weak var redTrafficLightsLabel: UIView!
+    
+    @IBOutlet weak var yellowTrafficLightsLabel: UIView!
+    
+    @IBOutlet weak var greenTrafficLightsLabel: UIView!
+    
+    @IBOutlet weak var startButtonLabel: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
 
-
+    @IBAction func startButtonPressed() {
+    }
+    
 }
 

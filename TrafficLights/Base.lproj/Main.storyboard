@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -22,9 +23,6 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1F1-5d-Ydl">
                                         <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
                                         <color key="backgroundColor" systemColor="systemPinkColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="120" id="rkc-Mg-uId"/>
-                                        </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TdC-Aw-xbL">
                                         <rect key="frame" x="0.0" y="130" width="120" height="120"/>
@@ -46,21 +44,48 @@
                                     <constraint firstAttribute="height" constant="380" id="Mrg-4a-Lhf"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lUP-sH-0Jr">
+                                <rect key="frame" x="137.5" y="499" width="139" height="48"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="139" id="bMC-g6-i3d"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="START">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="startButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="LqJ-Aq-PO6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="secondaryLabelColor"/>
                         <constraints>
                             <constraint firstItem="hyo-WP-jZE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GoQ-qa-DV4"/>
                             <constraint firstItem="hyo-WP-jZE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="Iee-GI-RUt"/>
+                            <constraint firstItem="lUP-sH-0Jr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wAk-VS-Xdk"/>
+                            <constraint firstItem="lUP-sH-0Jr" firstAttribute="top" secondItem="hyo-WP-jZE" secondAttribute="bottom" constant="59" id="wMk-en-7YR"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="greenTrafficLightsLabel" destination="ILV-Br-bvt" id="Hmi-QZ-CaS"/>
+                        <outlet property="redTrafficLightsLabel" destination="1F1-5d-Ydl" id="qQX-6S-iAV"/>
+                        <outlet property="startButtonLabel" destination="lUP-sH-0Jr" id="XIr-nF-Kqb"/>
+                        <outlet property="trafficLightsLabel" destination="hyo-WP-jZE" id="T2g-Cv-lM1"/>
+                        <outlet property="yellowTrafficLightsLabel" destination="TdC-Aw-xbL" id="BnS-AW-GMy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="70"/>
+            <point key="canvasLocation" x="18.840579710144929" y="69.642857142857139"/>
         </scene>
     </scenes>
     <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
