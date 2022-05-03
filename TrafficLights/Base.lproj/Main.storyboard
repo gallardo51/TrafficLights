@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -14,11 +14,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TrafficLights" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hyo-WP-jZE">
-                                <rect key="frame" x="127.5" y="16" width="120" height="380"/>
+                            <stackView contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hyo-WP-jZE">
+                                <rect key="frame" x="147" y="60" width="120" height="380"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1F1-5d-Ydl">
                                         <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
@@ -35,11 +35,11 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="380" id="Mrg-4a-Lhf"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="WzJ-v1-y8g"/>
+                                    <constraint firstAttribute="width" constant="120" id="kBX-FX-1C7"/>
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lUP-sH-0Jr">
-                                <rect key="frame" x="118" y="455" width="139" height="48"/>
+                                <rect key="frame" x="137.5" y="540" width="139" height="48"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="139" id="bMC-g6-i3d"/>
@@ -57,10 +57,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="secondaryLabelColor"/>
                         <constraints>
-                            <constraint firstItem="hyo-WP-jZE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GoQ-qa-DV4"/>
-                            <constraint firstItem="hyo-WP-jZE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="Iee-GI-RUt"/>
-                            <constraint firstItem="lUP-sH-0Jr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wAk-VS-Xdk"/>
-                            <constraint firstItem="lUP-sH-0Jr" firstAttribute="top" secondItem="hyo-WP-jZE" secondAttribute="bottom" constant="59" id="wMk-en-7YR"/>
+                            <constraint firstItem="lUP-sH-0Jr" firstAttribute="top" secondItem="hyo-WP-jZE" secondAttribute="bottom" constant="100" id="9Hv-HM-xwg"/>
+                            <constraint firstItem="lUP-sH-0Jr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="I7q-fC-l0Z"/>
+                            <constraint firstItem="hyo-WP-jZE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="pQp-Je-USb"/>
+                            <constraint firstItem="hyo-WP-jZE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tpl-zo-muz"/>
                         </constraints>
                     </view>
                     <connections>
